@@ -218,8 +218,7 @@ Unless you're especially fond of typing this a lot, I'd start by aliasing as fol
 
     alias prod-compose='docker-compose -f docker-compose.prod.yml'
 
-
-
+### Interestingly, it seems that `docker-compose.prod.yml` doesn't require an `expose` line.
 
 # Moving to DigitalOcean
 

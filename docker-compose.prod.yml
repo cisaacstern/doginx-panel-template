@@ -8,8 +8,6 @@ services:
     command: python manage.py
     volumes:
       - /usr/src/app/
-    expose:
-      - 5006
     env_file: 
       - ./.env.prod
   nginx:
