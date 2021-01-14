@@ -1,0 +1,4 @@
+# configuration
+REPO_NAME = 'terrain-corrector'
+SITE_NAME = 'Terrain Corrector'
+PORT = 5006

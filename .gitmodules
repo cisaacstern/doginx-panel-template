@@ -1,0 +1,3 @@
+[submodule "services/web/terrain-corrector"]
+	path = services/web/terrain-corrector
+	url = https://github.com/cisaacstern/terrain-corrector.git
