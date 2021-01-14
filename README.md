@@ -1,20 +1,25 @@
 # motivation
 A simple template for deploying containerized panel apps behind a reverse proxy.
 
-## Note: if you prefer a stripped-down version to work from, check out [simple-doginx](simple-doginx).
-This version is simplified in a few ways:
-1. No `git submodules`
-2. No system packages
-
-That might be right version for you if you're into it.
-But this version has some key details for "real world" situations. Notably, submodules and system packages.
-
 # acknowledgements
 
 This is inspired by Marc's [template](https://github.com/MarcSkovMadsen/awesome-analytics-apps-template) 
 and also draws heavily on [this post from testdriven.io](https://testdriven.io/blog/dockerizing-flask-with-postgres-gunicorn-and-nginx/).
 
 The parts about Docker machine are informed by [this Real Python post](https://realpython.com/dockerizing-flask-with-compose-and-machine-from-localhost-to-the-cloud/).
+
+## A note on complexity
+
+1. `git submodules`: Assumes that you have a more complex panel app.
+2. system packages: Many scientific apps may have compiled dependencies.
+3. `.dev` and `.prod`: When I first started, I thought I wouldn't do this. But it actually helps a lot, to be able to test incrementally. This allows us to serve at app at five distinct steps along the path:
+    - `panel serve`
+    - `python manage.py`
+    - `dev-compose`
+    - `prod-compose` on local host
+    - `prod-compose` on remote host 
+
+This structure 
 
 # setup
 
@@ -126,7 +131,7 @@ but I think it's for the best.)
 
 ## at the `services/web/` level
 
-Now let's edit `services/web/Dockerfile`. This is pretty important and worth looking at line-by-line.
+Now let's edit `services/web/Dockerfile.dev`. This is pretty important and worth looking at line-by-line.
 Here I'm adding some additional comments beyond those 
 
     # pull official base image
@@ -206,6 +211,15 @@ If you need to make any changes, you can bring down the container with:
     $ dev-compose down
 
 Then edit the project and re-build iteratively until you are satisfied.
+
+# Testing `prod-compose`
+
+Unless you're especially fond of typing this a lot, I'd start by aliasing as follows:
+
+    alias prod-compose='docker-compose -f docker-compose.prod.yml'
+
+
+
 
 # Moving to DigitalOcean
 

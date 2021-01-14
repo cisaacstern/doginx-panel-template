@@ -24,6 +24,8 @@ def serve():
         title=c.SITE_NAME,
         num_procs=1,
         websocket_origin=f'{address}:{str(c.PORT)}',
+        #websocket_origin=f'{address}:{str(1337)}',
+        use_xheaders=True,
         show=True
     )
 

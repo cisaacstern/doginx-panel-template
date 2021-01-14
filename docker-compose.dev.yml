@@ -2,7 +2,9 @@ version: '3.7'
 
 services:
   web:
-    build: ./services/web
+    build:
+      context: ./services/web
+      dockerfile: Dockerfile.dev
     command: python manage.py
     volumes:
       - /usr/src/app/
