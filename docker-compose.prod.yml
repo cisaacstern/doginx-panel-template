@@ -8,6 +8,8 @@ services:
     command: python manage.py
     volumes:
       - /usr/src/app/
+    expose:
+      - 5100
     env_file: 
       - ./.env.prod
   nginx:
@@ -15,7 +17,7 @@ services:
       context: ./services/nginx
       dockerfile: Dockerfile.prod
     ports:
-      - 1337:80
+      - 80:1337
     depends_on:
       - web
     

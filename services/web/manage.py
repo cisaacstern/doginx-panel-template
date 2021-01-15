@@ -18,15 +18,16 @@ def serve():
     address = os.getenv("DOCKER_ADDRESS", default="localhost")
 
     pn.serve(
-        panels={'app':app.servable},
+        panels={'/terra-param':app.servable},
         #port=c.PORT,
         port=5100,
         #dev=False,
         title=c.SITE_NAME,
         #num_procs=1,
         #websocket_origin=f'{address}:{str(c.PORT)}',
-        #websocket_origin=f'{address}:{str(1337)}',
-        websocket_origin='192.168.99.103:1337',
+        #websocket_origin='192.168.99.103:1337',
+        #websocket_origin='159.89.146.245:80',
+        websocket_origin='cstern.io',
         #use_xheaders=True,
     )
 
