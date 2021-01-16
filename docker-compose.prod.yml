@@ -12,12 +12,25 @@ services:
       - 5100
     env_file: 
       - ./.env.prod
+
+  flask:
+    build: ./services/flask
+    command: gunicorn --bind 0.0.0.0:5000 manage:app
+    volumes:
+      - /usr/src/app/
+    expose:
+      - 5000
+    env_file:
+      - ./.env.prod
+  
   nginx:
     build: 
       context: ./services/nginx
       dockerfile: Dockerfile.prod
     ports:
-      - 80:1337
+      - 80:80
     depends_on:
       - web
+      - flask
+
     
