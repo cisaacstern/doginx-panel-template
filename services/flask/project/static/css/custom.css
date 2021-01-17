@@ -1,0 +1,58 @@
+/* unvisited link */
+.menu:link {
+color: white;
+}
+
+/* visited link */
+.menu:visited {
+color: white;
+}
+
+/* mouse over link */
+.menu:hover {
+color: #9370DB;
+}
+
+/* selected link */
+.menu:active {
+color: #684ca0;
+}
+
+
+.social{
+    display: inline-block;
+    width: 48px;
+}
+
+/* unvisited link */
+.social:link,
+.social:visited{
+color: white;
+}
+
+/* mouse over link */
+.social:hover {
+color: violet;
+}
+
+/* selected link */
+.social:active {
+color: #684ca0;
+}
+
+
+/* Style all font awesome icons */
+.fa {
+    padding: 5px;
+    font-size: 20px;
+    width: 35px;
+    text-align: center;
+    border-radius: 30%;
+    background: #292929;
+    opacity: 0.7;
+}
+  
+/* Add a hover effect if you want */
+.fa:hover {
+    background: #646464;
+}
