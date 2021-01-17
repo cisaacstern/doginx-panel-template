@@ -1,0 +1,132 @@
+body {
+    background-color: #292929;
+    text-align: left;
+    font-size: 110%;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80vh;
+    width: auto;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    width: 95%;
+}
+p {
+    color: white;
+    font-family: Hack, monospace;
+}
+h1 {
+    color: white;
+    font-family: Hack, monospace;
+}
+
+.social{
+    display: inline-block;
+    width: 48px;
+}
+
+/* unvisited link */
+.social:link,
+.social:visited{
+color: white;
+}
+
+/* mouse over link */
+.social:hover {
+color: violet;
+}
+
+/* selected link */
+.social:active {
+color: #684ca0;
+}
+
+
+/* Style all font awesome icons */
+.fa {
+    padding: 5px;
+    font-size: 20px;
+    width: 35px;
+    text-align: center;
+    border-radius: 30%;
+    background: #292929;
+    opacity: 0.7;
+}
+  
+/* Add a hover effect if you want */
+.fa:hover {
+    background: #646464;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%; /* For at least Firefox */
+    min-height: 100%;
+  }
+  .site-wrapper-inner {
+    display: table-cell;
+    vertical-align: top;
+  }
+  .cover-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+  }
+  
+  /* Padding for spacing */
+  .inner {
+    padding: 30px;
+  }
+  
+  .inner small {
+    color: #D1F6FF;
+  }
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+
+/*
+ * Affix and center
+ */
+
+ @media (min-width: 768px) {
+    /* Start the vertical centering */
+    .site-wrapper-inner {
+      vertical-align: middle;
+    }
+    /* Handle the widths */
+    .cover-container {
+      width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    }
+  }
+  
+@media (min-width: 992px) {
+    .cover-container {
+      width: 920px;
+    }
+  }
+  
+  
+@media(max-width: 768px) {
+    h1, p {
+      text-align: center;
+    }
+    .links {
+      margin-top: 2em;
+      font-size: 1.5em;
+      text-align: center;
+    }
+  }

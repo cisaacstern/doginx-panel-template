@@ -4,76 +4,42 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Charles Stern | Python + Geoscience</title>
-    <link   rel="stylesheet" 
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link   rel= "stylesheet" 
-            type= "text/css" 
-            href= "{{ url_for('static',filename='css/custom.css') }}">
-    
-    <link   rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- layout -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- typeface -->
     <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
-
-    <style>
-        body {
-            background-color: #292929;
-            margin-top: 10vh;
-        }
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            height: 80vh;
-            width: auto;
-        }
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 8px;
-            width: 95%;
-        }
-        p {
-            color: white;
-            font-family: Hack, monospace;
-        }
-        h1 {
-            color: white;
-            font-family: Hack, monospace;
-        }
-    </style>
+    <!-- custom -->
+    <link rel= "stylesheet" href= "{{ url_for('static',filename='css/custom.css') }}">
 </head>
 
 <body>
     <div class="w3-row">
         <div class="w3-col w3-container s0 m1 l1"></div>
         <div class="w3-col w3-container s12 m3 l3">
-            <img src="{{ url_for('static',filename='img/city_headshot.jpeg') }}" alt="headshot">
+            <img class="cropped" src="{{ url_for('static',filename='img/city_headshot.jpeg') }}" alt="headshot">
         </div>
         <div class="w3-col w3-container s12 m7 l7">
             <h1>Charles Stern</h1>
             <p>
-                I'm a newbie scientific Pythonista with an special interest in geospatial analysis and
-                visualization. Terra-Param, my largest project to date, integrates scipy, etc.
+                I'm a scientific Pythonista with an special interest in geospatial analysis and
+                visualization. 
+                <a class="txt" href="http://cstern.io/terra-param/" target="_blank">Terra-Param</a>
+                , my largest project to date, integrates scipy, etc.
                 <br><br>
-                Before I began this, I was a medical device designer and entreprenuer.
-                <br><br>            
-                I hold a BA in Religion & East Asian Studies from Bowdoin College. 
+                Before I
+                <br><br>
             </p>
-
-            <a class="social" href="https://twitter.com/charlesstern" target="_blank">
-                <i class="fa fa-twitter fa-2x"></i></a>
-            <a class="social" href="https://github.com/cisaacstern" target="_blank">
-                <i class="fa fa-github fa-2x"></i></a>
-            <a class="social" href="https://www.linkedin.com/in/charles-stern-ab965b29/" target="_blank"> 
-                <i class="fa fa-linkedin fa-2x"></i></a>
-            <a class="social" href="mailto:charlesisaacstern@gmail.com" target="_blank"> 
-                <i class="fa fa-envelope fa-2x"></i></a>
+            
+            <a href="https://twitter.com/charlesstern" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+            <a href="https://github.com/cisaacstern" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/charles-stern-ab965b29/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+            <a href="mailto:charlesisaacstern@gmail.com" target="_blank"><i class="fa fa-paper-plane fa-2x"></i></a>
+     
         </div>
-        <div class="w3-col w3-container s0 m1 l1 w3-blue"></div>
+        <div class="w3-col w3-container s0 m1 l1"></div>
     </div>
 
 </body>
