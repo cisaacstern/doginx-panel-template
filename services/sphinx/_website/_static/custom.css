@@ -1,0 +1,84 @@
+/* background color things */
+body,
+div.body {
+    background-color: #121212;
+    color: hsla(0,0%,100%,0.8509803921568627);
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+}
+
+div.documentwrapper.background {
+    background-color: #121212;   
+}
+
+pre {
+    background-color: #202020;
+}
+
+
+/* margin things */
+div.document{
+    margin-top:0;
+}
+h1 {
+    margin-inline-start:1em;
+}
+div.body h1{
+    margin-top:1em;
+}
+
+div.sphinxsidebarwrapper {
+    background-color: #292929;
+    height:100vh;
+    margin-left 5vh;
+}
+div.sphinxsidebar input {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; 
+}
+
+h1, h2, 
+div.body h1, div.body h2, 
+div.sphinxsidebar h1, div.sphinxsidebar h2 {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+}
+
+h3, h4, h5, h6, 
+div.body h3, div.body h4, div.body h5, div.body h6,
+div.sphinxsidebar h3, div.sphinxsidebar h4, div.sphinxsidebar h5, div.sphinxsidebar h6 {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;    
+    color: hsla(0,0%,100%,0.8509803921568627);
+}
+
+a:link,
+a:visited {
+    border-bottom: 1px dashed;
+    color: #368ce2;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+a:hover,
+a:focus {
+    border-bottom-style: solid;
+    color: khaki;
+    /* outline: 1px solid; */
+    outline-offset: .125em;
+}
+
+div.sphinxsidebar a,
+div.sphinxsidebar h3 a,
+div.sphinxsidebar a:hover,
+div.sphinxsidebar a:focus {
+    border-bottom: 1px dashed;
+    color: #368ce2; 
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+div.sphinxsidebar a:hover,
+div.sphinxsidebar a:focus {
+    border-bottom-style: solid;
+    color: khaki;
+    /* outline: 1px solid; */
+    outline-offset: .125em;
+}
