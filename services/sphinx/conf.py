@@ -16,7 +16,7 @@ import alabaster
 # -- General ABlog Options ----------------------------------------------------
 
 # A path relative to the configuration directory for blog archive pages.
-# blog_path = 'blog'
+blog_path = 'posts'
 
 # The "title" for the blog, used in active pages.  Default is ``'Blog'``.
 blog_title = u'Charles Stern\'s Blog Blog'
@@ -170,7 +170,11 @@ extensions = [
     'sphinx.ext.todo',
     'alabaster',
     'ablog',
+    'sphinxemoji.sphinxemoji',
 ]
+
+# Emoji style
+sphinxemoji_style = 'twemoji'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates', ablog.get_html_templates_path()]

@@ -1,3 +1,7 @@
+# ablog builds
+services/sphinx/_website/
+
+
 # logo development files
 __inkscape__/
 
