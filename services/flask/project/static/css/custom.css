@@ -1,6 +1,21 @@
 body {
     background-color: #292929;
     margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+    font-family: Hack, monospace;
+}
+  
+ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: white; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
 img {
@@ -60,11 +75,4 @@ color: white;
 }
 .fa:hover {
 opacity:40%;
-}
-
-
-.photo { 
-    background: url(blah.jpg) 50% 50% no-repeat; /* 50% 50% centers image in div */
-    width: 250px;
-    height: 250px;
 }

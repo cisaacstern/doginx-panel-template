@@ -1,5 +1,5 @@
 .. post:: Jan 17, 2021
-   :tags: 
+   :tags: docker, devops, python, shell, yaml
 
 Docker-Machine
 ==============

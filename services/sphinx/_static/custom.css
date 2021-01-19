@@ -1,13 +1,19 @@
+
 /* background color things */
+img {
+    max-width: 100%;
+}
+
+
 body,
 div.body {
-    background-color: #121212;
-    color: hsla(0,0%,100%,0.8509803921568627);
+    background-color: #131416;
+    color: #adbbc9;
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
 }
 
 div.documentwrapper.background {
-    background-color: #121212;   
+    background-color: #131416;   
 }
 
 pre {
@@ -26,13 +32,25 @@ div.body h1{
     margin-top:1em;
 }
 
+
+/* sidebar things */
+
 div.sphinxsidebarwrapper {
-    background-color: #292929;
+    background-color: #1a1c1e;
     height:100vh;
-    margin-left 5vh;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 div.sphinxsidebar input {
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; 
+}
+
+@media screen and (max-width: 875px){
+    div.sphinxsidebar {
+        background: inherit;
+    }
 }
 
 h1, h2, 
@@ -43,42 +61,51 @@ div.sphinxsidebar h1, div.sphinxsidebar h2 {
 
 h3, h4, h5, h6, 
 div.body h3, div.body h4, div.body h5, div.body h6,
-div.sphinxsidebar h3, div.sphinxsidebar h4, div.sphinxsidebar h5, div.sphinxsidebar h6 {
+div.sphinxsidebar h4, div.sphinxsidebar h5, div.sphinxsidebar h6 {
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;    
-    color: hsla(0,0%,100%,0.8509803921568627);
+    color: #adbbc9;
+}
+
+div.sphinxsidebar h3 {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;    
+    color: #9ca0a5;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 a:link,
-a:visited {
-    border-bottom: 1px dashed;
+a:visited,
+div.sphinxsidebar a {
+    /* border-bottom: 1px dashed; */
     color: #368ce2;
     font-style: normal;
     font-weight: 400;
     text-decoration: none;
 }
 a:hover,
-a:focus {
-    border-bottom-style: solid;
-    color: khaki;
-    /* outline: 1px solid; */
-    outline-offset: .125em;
-}
-
-div.sphinxsidebar a,
-div.sphinxsidebar h3 a,
-div.sphinxsidebar a:hover,
-div.sphinxsidebar a:focus {
-    border-bottom: 1px dashed;
-    color: #368ce2; 
-    font-style: normal;
-    font-weight: 400;
-    text-decoration: none;
-}
-
+a:focus,
 div.sphinxsidebar a:hover,
 div.sphinxsidebar a:focus {
     border-bottom-style: solid;
-    color: khaki;
-    /* outline: 1px solid; */
-    outline-offset: .125em;
+}
+
+div.sphinxsidebar h3 a {
+    color: #1a1c1e; 
+    background-color: #9ca0a5;
+    opacity: 40%;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+div.sphinxsidebar h3 a:hover,
+div.sphinxsidebar h3 a:focus {
+    opacity: 25%;
+}
+
+div.footer {
+    margin: 0px auto 30px auto;
+    border-top: 1px solid #9ca0a5;
 }

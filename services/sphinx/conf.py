@@ -254,7 +254,7 @@ html_theme = 'alabaster'
 # documentation.
 html_theme_options = {
     'github_button': False,
-    'logo': 'greyscale.png',
+    'logo': 'cairn_retouch_square_1.png',
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
